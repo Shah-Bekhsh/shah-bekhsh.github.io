@@ -25,6 +25,8 @@ Analyzing the following calendar plot for the focused crimes per each day availa
 
 # HeatMap (Pending)
 
+The following heat map of the city over the years 2003 - 2017 demonstrates a few interesting trends over the years.
+
 <iframe src="/time_heatmap.html" height="500" width="700"></iframe>
 
 # References
