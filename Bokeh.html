@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Data Visualization</title>
+    <script type="text/javascript">
+        function updateChart() {
+            var interval = document.getElementById("timeInterval").value;
+            document.getElementById("chartFrame").src = "plot_" + interval + ".html";
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Time Interval</h2>
+    <select id="timeInterval" onchange="updateChart()">
+        <option value="Year">Year</option>
+        <option value="Day">Day</option>
+        <option value="Week">Week</option>
+        <option value="Month">Month</option>
+    </select>
+    <iframe id="chartFrame" src="plot_Year.html" style="width:100%; height:600px; border:none;"></iframe>
+</body>
+</html>

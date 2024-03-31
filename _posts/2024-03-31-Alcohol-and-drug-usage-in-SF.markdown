@@ -29,6 +29,10 @@ The following heat map of the city over the years 2003 - 2017 demonstrates a few
 
 <iframe src="/time_heatmap.html" height="500" width="700"></iframe>
 
+
+# Interaction
+<iframe src="/Bokeh.html" height="500" width="700"></iframe>
+
 # References
 
 [^Crisis]: de Goeij, M. C. M., Suhrcke, M., Toffolutti, V., van de Mheen, D., Schoenmakers, T. M., & Kunst, A. E. (2015). How economic crises affect alcohol consumption and alcohol-related health problems: A realist systematic review. Social Science & Medicine, 131, 131-146. Retrieved from [https://doi.org/10.1016/j.socscimed.2015.02.025](https://doi.org/10.1016/j.socscimed.2015.02.025)
