@@ -30,7 +30,7 @@ github_username: shah-bekhsh
 
 # Build settings
 # theme: minima
-theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
 # Exclude from processing.
