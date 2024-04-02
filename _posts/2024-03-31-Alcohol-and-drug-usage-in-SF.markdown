@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Shah, Daniel & Dan
 title: "Alcohol and drug usage in San Francisco from 2003-2018"
 date: 2024-03-31 12:30:14
 subtitle: "How does substance abuse behave in San Francisco? A collection of insights and visualizations on the city's alcohol and drug usage. "

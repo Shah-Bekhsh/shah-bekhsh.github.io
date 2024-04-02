@@ -21,8 +21,6 @@
 title: Social Data Visualization
 email: s232858@dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  The purpose of this website is to show data stories from the San Francisco Crime Database. 
-  Our goal is to visualize the data in a way that is easy to understand and to provide insights into the data.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
