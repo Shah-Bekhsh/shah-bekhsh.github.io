@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Alcohol and drug usage in San Francisco from 2003-2018 - Social Data Visualization
+    
+  </title>
+
+  <meta name="description" content="Introduction To The Dataset">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/2024/03/31/Alcohol-and-drug-usage-in-SF.html">
+  <link rel="alternate" type="application/rss+xml" title="Social Data Visualization" href="/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Social Data Visualization</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/images/sf.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Alcohol and drug usage in San Francisco from 2003-2018</h1>
+            
+            <h2 class="subheading">How does substance abuse behave in San Francisco? A collection of insights and visualizations on the city's alcohol and drug usage. </h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Shah, Daniel & Dan</a>
+              on March 31, 2024 &middot; <span class="reading-time" title="Estimated read time">
+  
+   9 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h4 id="introduction-to-the-dataset">Introduction To The Dataset</h4>
+
+<p>San Francisco is the 13th largest city in the United States Of America. Its inhabitants include people from various cultural and ethnic background, including Asians, African Americans, Hispanics, etc. With over 808,000 people living in the city since 2020, San Francisco is seeing a rise in crime. In this article, we take a deep dive into the historical data published by the San Francisco Police Department (SFPD), from the years 2003 to 2018 (<a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry/about_data">DataSF</a>), and statistically analyze the effects of drugs on the San Francisco community.</p>
+
+<p>This dataset is a rich repository of information. It contains the information of each criminal incident that has been attended to by an officer of the SFPD, including the type of the crime, the time it was recorded, the geographical coordinates, and other such important details. This provides us with a deeply granular data from which many different insights can be derived. Our goal is to analyze the trends of substance abuse, identify their connection with underlying socio-economic factors if such exist and see how the city of SF is faring in 2024.</p>
+
+<h4 id="hotspots-in-san-francisco">Hotspots In San Francisco</h4>
+
+<p>Since the Great Depression, San Francisco has seen an almost impressive improvement in its economic situation. In 2023, the median income of a household in SF was roughly $153k. However, there is a large income inequality between races, with almost 10.1% (mostly Black, Hispanic and Native Americans) of the inhabitants of the city living below poverty line. Unsurprisingly, this divide also shows in the regions of the city, occupied by low income inhabitants, where alcohol and drug related crimes are disproportionately high compared to the rest of the city. The Mission district in San Francisco is amongst the poorest districts in the city and its inhabitants are mainly Hispanic and Native Americans. Similarly, the Bayview district, which is a predominantly Black American neighborhood, also suffers from wealth inequality. And finally, we have the infamous region of Tenderloin, which we shall go into much deeper detail.</p>
+
+<p>We map drugs/narcotics and alcohol related incidents to the map of the city. This interactive map of the city shows the state of substance related crimes over the years (2003-2017). We can clearly see that areas with some of the lowest income are hotspots for crime. As described above, Mission district and Bayview district are among the regions with high concentration of drug crimes.</p>
+
+<iframe src="/time_heatmap.html" height="500" width="100%"></iframe>
+
+<p>Tenderloin is the worst affected region in SF due to drugs and the trend appears to be detriorating over the time. Throughout the years, the number of incidents have either remained contstant of increased in this region. This can be attributed to an array of underlying social, economical and political circumstances. A survey <sup id="fnref:survey" role="doc-noteref"><a href="#fn:survey" class="footnote" rel="footnote">1</a></sup> related to substance use, treatment and housing in Tenderloin reveals that this region has historically been a central location for many marginalized Americans (especially Black, Hispanic and Gay, Lesbian and Queer communities). Over the years, Tenderloin has become a last resort for homeless and poverty ridden people of SF. Conversely, the areas around 19th Avenue, such as Sunset Dst, Forest Hill and Ocean View have some of the lowest incidents throughout the years. As seen in <a href="https://sf.curbed.com/2016/12/9/13899936/income-inequality-map-san-francisco">this</a> blogpost, these are some of the highest income localities in the city of SF.</p>
+
+<p>As such, a centralized drug market has been established in Tenderloin by the criminal element of SF, which caters to people with histories of substance abuse. The abundance of illicit drugs on the streets has ravaged Tenderloin the worst. The year 2023 (not shown in the heatmap), has been recorded as the deadliest year on record for overdose deaths in SF, with a state of emergency being declared in Tenderloin district.</p>
+
+<h4 id="substance-abuse-incidents-in-san-francisco-over-the-years">Substance Abuse Incidents In San Francisco Over The Years</h4>
+
+<p>Let us take a step back and analyze the pattern over which the substance problem has evolved in SF. We use a calender plot to mark all the incidents that fall under the cateogories of “Liquor Laws”, “Drugs/Narcotics”, “Drunkenness” and “Driving Under Influence”.</p>
+
+<p><img src="/images/crimes_calendar.png" alt="Calendar plot" style="max-width: 100%;" /></p>
+
+<p>This calendar plot immediately shows us some interesting patterns regarding the aforementioned categories of the crimes, which were not evident in the heatmap in the previous section.</p>
+
+<ul>
+  <li>
+    <p>First, an increase in these crimes can be observed starting from 2006 until 2010, where it reached its peak of almost 12,000 incidents. Although it is very difficult to find the root cause to which this increase can be attributed, we believe that this issue was exacerbated by the housing market collapse of 2008 and the eventual recession that the United States suffered, which left a lot of Americans without a home. The economic and social impact of this incident was extreme and potentially devastated the mental health of many residents of SF, causing an increase in the usage of drugs, alcohol and other illicit substances. We support our hypothesis with this research article <sup id="fnref:Crisis" role="doc-noteref"><a href="#fn:Crisis" class="footnote" rel="footnote">2</a></sup>, which explains that financial crises are motivators that can lead to an increase in alcohol non-healthy consumption as a coping mechanism to psychological distress, which can be triggered specially by unemployment and income reductions.</p>
+  </li>
+  <li>
+    <p>Highest rates are always during the first three months of the year, coincidentally, during winter. Winter conditions can have a huge impact on our psychology and behavior. Environmental factors, social isolation, holidays, and Seasonal Affective Disorder are some of the contributors to an increased substance usage, and could set a case for a deeper study on this topic <sup id="fnref:Winter" role="doc-noteref"><a href="#fn:Winter" class="footnote" rel="footnote">3</a></sup>.</p>
+  </li>
+</ul>
+
+<h4 id="interaction">Interaction</h4>
+
+<iframe src="/Bokeh.html" height="500" width="700" style="border:none;"></iframe>
+
+<p>The interactive visualization presented above illustrates the incidence count of three distinct categories over time, with a specific emphasis on the yearly interval. The blue line, representing drug/narcotic incidents, exhibits a pronounced peak around 2008, followed by a gradual decline thereafter. The turquoise line, indicating drunkenness, alongside the green line, denoting driving under the influence, both maintain relatively stable but significantly lower incident counts over the same period.</p>
+
+<p>Based on the strategic document of the United Nations Office on Drugs and Crime (UNODC) <sup id="fnref:UNODC" role="doc-noteref"><a href="#fn:UNODC" class="footnote" rel="footnote">4</a></sup> for the 2008-2011 period, two key initiatives that might have contributed to the decline in drug-related crimes after 2008 are:</p>
+
+<ul>
+  <li>
+    <p>Enhanced International Legal Frameworks: The strategy’s emphasis on the universal ratification and implementation of international drug control conventions and improvement of national legislations could have significantly strengthened global efforts to combat drug-related crimes. The alignment of national laws with international standards likely resulted in more robust and effective legal actions against narcotics offenses.</p>
+  </li>
+  <li>
+    <p>Intensified International Cooperation and Capacity Building: The UNODC’s focus on increasing the capacity for international cooperation against organized crime, corruption, drug trafficking, and terrorism may have led to better coordinated and more comprehensive cross-border efforts to curb the illicit drug trade. The development of national criminal justice systems and the implementation of international legal instruments were vital in these cooperative efforts.</p>
+  </li>
+</ul>
+
+<h4 id="references">References</h4>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:survey" role="doc-endnote">
+      <p>Chang, J. S. (2017). Health in the Tenderloin: A resident-guided study of substance use, treatment, and housing. Social Science &amp; Medicine, 176, 166-174. <a href="#fnref:survey" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:Crisis" role="doc-endnote">
+      <p>de Goeij, M. C. M., Suhrcke, M., Toffolutti, V., van de Mheen, D., Schoenmakers, T. M., &amp; Kunst, A. E. (2015). How economic crises affect alcohol consumption and alcohol-related health problems: A realist systematic review. Social Science &amp; Medicine, 131, 131-146. Retrieved from <a href="https://doi.org/10.1016/j.socscimed.2015.02.025">https://doi.org/10.1016/j.socscimed.2015.02.025</a> <a href="#fnref:Crisis" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:Winter" role="doc-endnote">
+      <p>“Why Do Drug Overdoses Increase in Winter?” <em>The Right Step Rehab Hill Country</em>. Retrieved from <a href="https://www.rightsteprehabhillcountry.com/addiction-blog/why-do-drug-overdoses-increase-in-winter/">https://www.rightsteprehabhillcountry.com/addiction-blog/why-do-drug-overdoses-increase-in-winter/</a> <a href="#fnref:Winter" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:UNODC" role="doc-endnote">
+      <p>United Nations Office on Drugs and Crime. (2007). Strategy for the period 2008-2011 for the United Nations Office on Drugs and Crime. E/CN.7/2007/14–E/CN.15/2007/5. UNODC. <a href="#fnref:UNODC" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:s232858@dtu.dk">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/shah-bekhsh">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy;  2024</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+</body>
+
+</html>
