@@ -41,7 +41,7 @@ This calendar plot immediately shows us some interesting patterns regarding the 
 
 <iframe src="/Bokeh.html" height="500" width="700" style="border:none;"></iframe>
 
-The interactive visualization presented above illustrates the incident count of 4 distinct crime categories over time, with a specific emphasis on the yearly interval. The blue line, representing drug/narcotic incidents, exhibits a pronounced peak around 2008, followed by a gradual decline thereafter. The turquoise line, indicating drunkenness, alongside the green line, denoting driving under the influence, both maintain relatively stable but significantly lower incident counts over the same period.
+The interactive visualization presented above illustrates the incident count of 4 distinct crime categories over time, with a specific emphasis on the yearly interval. The blue line, representing drug/narcotic incidents, exhibits a pronounced peak around 2008, followed by a gradual decline thereafter. The turquoise line, indicating drunkenness, alongside the green line, denoting driving under the influence, both maintain relatively stable but significantly lower incident counts over the same period. Readers are encouraged to try changing the time interval drop down to observe the data in daily, weekly and monthly intervals.
 
 Based on a document published by the United Nations Office on Drugs and Crime (UNODC) [^UNODC] for the 2008-2011 period, we can attribute this decline in drug-related crimes after 2008 to two key initiatives:
 
